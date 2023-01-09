@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.HomeFragment">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#FEF6E4"
+       >
+
+       <com.google.android.material.textview.MaterialTextView
+           android:id="@+id/home_txt_homepage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Home Page"
+           android:textColor="#001858"
+           android:fontFamily="@font/josefinsans_light"
+           android:textSize="24sp"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginStart="25dp"
+           />
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:id="@+id/home_img_logo"
+           android:layout_alignBaseline="@+id/home_txt_homepage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:srcCompat="@drawable/logo"
+
+           android:layout_centerHorizontal="true"
+
+           />
+
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/home_BTN_myEvents"
+           android:layout_width="250dp"
+           android:layout_height="60dp"
+           android:layout_below="@id/home_img_logo"
+           android:layout_centerInParent="true"
+           app:backgroundTint="#8BD3DD"
+           android:layout_marginTop="30dp"
+           app:cornerRadius="39dp"
+           android:text="my events"
+           android:textColor="#001858"
+           android:fontFamily="@font/josefinsans_medium"
+           android:textSize="20sp"
+           />
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/home_BTN_invited"
+           android:layout_width="250dp"
+           android:layout_height="60dp"
+           android:layout_below="@id/home_BTN_myEvents"
+           android:layout_centerInParent="true"
+           app:backgroundTint="#8BD3DD"
+           android:layout_marginTop="30dp"
+           app:cornerRadius="39dp"
+           android:text="invited"
+           android:textColor="#001858"
+           android:fontFamily="@font/josefinsans_medium"
+           android:textSize="20sp"
+           />
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/home_BTN_newEvent"
+           android:layout_width="250dp"
+           android:layout_height="60dp"
+           android:layout_below="@id/home_BTN_invited"
+           android:layout_centerInParent="true"
+           app:backgroundTint="#F582AE"
+           android:layout_marginTop="30dp"
+           app:cornerRadius="39dp"
+           android:text="New event"
+           android:textColor="#001858"
+           android:fontFamily="@font/josefinsans_medium"
+           android:textSize="20sp"
+           />
+
+
+   </RelativeLayout>
+
+
+</FrameLayout>

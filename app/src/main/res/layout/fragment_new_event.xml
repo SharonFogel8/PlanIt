@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.NewEventFragment">
+
+    <RelativeLayout
+        android:id="@+id/newEvent_RLY_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEF6E4"
+
+        >
+
+
+        <TextView
+            android:id="@+id/newEvent_TXT_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Event"
+            android:fontFamily="@font/josefinsans_bold"
+            android:textSize="30sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#001858"
+            />
+
+        <LinearLayout
+
+            android:layout_below="@+id/newEvent_TXT_headline"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignStart="@id/newEvent_TXT_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:verticalScrollbarPosition="defaultPosition"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newEvent_BTN_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                app:backgroundTint="#FEF6E4"
+                android:text="add photo"
+                android:textSize="18sp"
+                android:textColor="#9A9797" />
+
+            <EditText
+                android:id="@+id/newEvent_ETXT_name"
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textColor="#9A9797"
+                android:textSize="20sp"
+                android:fontFamily="@font/normal_txt"
+                android:layout_marginTop="10dp"
+                />
+            <AutoCompleteTextView
+                android:id="@+id/newEvent_ETXT_type"
+                android:text="Event type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textColor="#9A9797"
+                android:textSize="20sp"
+                android:fontFamily="@font/normal_txt"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/newEvent_ETXT_amount"
+                android:text="Amount invited"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textColor="#9A9797"
+                android:textSize="20sp"
+                android:fontFamily="@font/normal_txt"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/newEvent_ETXT_location"
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textColor="#9A9797"
+                android:textSize="20sp"
+                android:fontFamily="@font/normal_txt"
+                android:layout_marginTop="10dp"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/newEvent_TXT_date"
+                    android:text="00/00/0000"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="#9A9797"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/normal_txt"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/newEvent_BTN_date"
+                    android:text="add Date"
+                    android:backgroundTint="#F3D2C1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#001858"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/normal_txt"
+                    android:layout_marginTop="10dp"
+                    app:cornerRadius="39dp"
+
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newEvent_BTN_create"
+                android:layout_width="200dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#8BD3DD"
+                android:layout_marginTop="25dp"
+                app:cornerRadius="39dp"
+                android:text="create account"
+                android:textColor="#001858"
+                android:fontFamily="@font/josefinsans_medium"
+                android:textSize="18sp"
+                />
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/newEvent_LAY_datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:background="#FFFFFF"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <DatePicker
+                    android:id="@+id/date_picker_DP_date_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    >
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/newEvent_BTN_cancel"
+                        android:text="cancel"
+                        android:backgroundTint="#F3D2C1"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="#001858"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/normal_txt"
+                        app:cornerRadius="39dp"
+                        android:layout_margin="10dp"
+
+                        />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/newEvent_BTN_ok"
+                        android:text="ok"
+                        android:backgroundTint="#F3D2C1"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:textColor="#001858"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/normal_txt"
+                        app:cornerRadius="39dp"
+                        android:layout_margin="10dp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

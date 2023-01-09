@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.LoginActivity">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/start_img_logo"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_Login"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/start_img_logo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/josefinsans_medium"
+            android:text="Login"
+            android:textColor="#001858"
+            android:textSize="20sp"
+            app:backgroundTint="#8BD3DD"
+            app:cornerRadius="39dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_BTN_register"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/start_BTN_Login"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/josefinsans_medium"
+            android:text="register"
+            android:textColor="#001858"
+            android:textSize="20sp"
+            app:backgroundTint="#8BD3DD"
+            app:cornerRadius="39dp" />
+
+    </RelativeLayout>

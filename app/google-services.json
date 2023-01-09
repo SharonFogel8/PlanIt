@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623300587271",
+    "project_id": "mystical-melody-374022",
+    "storage_bucket": "mystical-melody-374022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623300587271:android:c0c53bebc71af5e4cddfa2",
+        "android_client_info": {
+          "package_name": "com.sharon.planitall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623300587271-rle5ncqlcmcf3ehf0bq0jsq18c5c20rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoMyku9AGTwhRrDYhqgv4tSPVW3wseR0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623300587271-rle5ncqlcmcf3ehf0bq0jsq18c5c20rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

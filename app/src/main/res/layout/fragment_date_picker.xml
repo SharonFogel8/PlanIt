@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.DatePickerFragment"
+
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FEF6E4"
+        android:orientation="vertical"
+        >
+        <DatePicker
+            android:id="@+id/date_picker_DP_date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newEvent_BTN_cancel"
+                android:text="cancel"
+                android:backgroundTint="#F3D2C1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:textColor="#001858"
+                android:textSize="10dp"
+                android:fontFamily="@font/normal_txt"
+                app:cornerRadius="39dp"
+
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newEvent_BTN_ok"
+                android:text="ok"
+                android:backgroundTint="#F3D2C1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:textColor="#001858"
+                android:textSize="10dp"
+                android:fontFamily="@font/normal_txt"
+                app:cornerRadius="39dp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
