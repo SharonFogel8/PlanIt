@@ -1,22 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FEF6E4"
-    android:orientation="vertical"
     tools:context=".activities.HomePageActivity">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottom_BTN_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#FEF6E4"
+        app:icon="@drawable/icn_back_btn"
+        app:iconTint="#001858"
+        app:iconSize="16dp"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+        android:layout_alignParentStart="true"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottom_BTN_signout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FEF6E4"
+        app:icon="@drawable/icn_signout_btn"
+        app:iconTint="#001858"
+        app:iconSize="25dp"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+        android:layout_alignParentEnd="true"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            >
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
     <FrameLayout
         android:id="@+id/home_LAY_page"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="30"
+
         />
+
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:background="#F9F0DC"
         android:orientation="horizontal"
@@ -24,67 +64,63 @@
         android:layout_weight="1"
 
         >
-        <com.google.android.material.button.MaterialButton
+
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/bottom_BTN_home"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            app:icon="@drawable/img_home_btn"
-            app:iconTint="#001858"
-            app:backgroundTint="#F9F0DC"
-            app:cornerRadius="50dp"
+            app:srcCompat="@drawable/img_home_btn"
+            android:scaleType="center"
             android:layout_margin="10dp"
 
             />
-        <com.google.android.material.button.MaterialButton
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/bottom_BTN_search"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            app:icon="@drawable/img_search_btn"
-            app:iconTint="#001858"
-            app:backgroundTint="#F9F0DC"
+            app:srcCompat="@drawable/img_search_btn"
+            android:scaleType="center"
             app:cornerRadius="50dp"
             android:layout_margin="10dp"
             />
-        <com.google.android.material.button.MaterialButton
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/bottom_BTN_tdl"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            app:icon="@drawable/img_tdl_btn"
-            app:iconTint="#001858"
-            app:backgroundTint="#F9F0DC"
+            app:srcCompat="@drawable/img_tdl_btn"
+            android:scaleType="center"
             app:cornerRadius="50dp"
             android:layout_margin="10dp"
             />
-        <com.google.android.material.button.MaterialButton
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/bottom_BTN_favourites"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            app:icon="@drawable/img_faivorite_btn"
-            app:iconTint="#001858"
-            app:backgroundTint="#F9F0DC"
+            app:srcCompat="@drawable/img_faivorite_btn"
+            android:scaleType="center"
             app:cornerRadius="50dp"
             android:layout_margin="10dp"
             />
-        <com.google.android.material.button.MaterialButton
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/bottom_BTN_profile"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            app:icon="@drawable/img_profile_btn"
-            app:iconTint="#001858"
-            app:backgroundTint="#F9F0DC"
+            app:srcCompat="@drawable/img_profile_btn"
+            android:scaleType="center"
             app:cornerRadius="50dp"
             android:layout_margin="10dp"
             />
+
 
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

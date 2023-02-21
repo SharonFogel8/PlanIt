@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.TDLFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEF6E4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/list_tdl_TXT_tdl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TDL"
+            android:fontFamily="@font/josefinsans_bold"
+            android:textSize="24sp"
+            android:layout_margin="15dp"
+            android:textColor="#001858"
+            />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_tdl_RCV_tdl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/list_tdl_RTL_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#614A4747"
+        android:visibility="invisible"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/list_tdl_LNL_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:background="#FEF6E4"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="new task"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/list_tdl_ETXT_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:hint="Add title"
+                android:textSize="18sp" />
+            <DatePicker
+                android:id="@+id/list_tdl_DP_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:layout_marginStart="10dp"
+                />
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/list_tdl_BTN_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="OK"
+                    android:textColor="#001858"
+                    app:cornerRadius="100dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/list_tdl_BTN_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FEF6E4"
+                    android:text="cancel"
+                    android:textColor="#001858"
+                    app:cornerRadius="100dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/list_tdl_BTN_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="20dp"
+            android:text="+"
+            android:textColor="#001858"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:backgroundTint="#F582AE"
+            />
+    </RelativeLayout>
+</FrameLayout>

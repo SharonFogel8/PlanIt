@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.EditEventProfile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEF6E4"
+        android:orientation="vertical"
+
+        >
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/editEventProfile_LLY_profileHeadlineEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:id="@+id/editEventProfile_BTN_Editphoto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#FEF6E4"
+                android:text="add photo"
+                android:textSize="18sp"
+                android:scaleType="centerCrop"
+                android:textColor="#9A9797"
+                />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Name"
+                android:textColorHint="#555B6E"
+                app:boxStrokeColor="#555B6E"
+                app:boxStrokeWidth="2dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="15"
+                app:errorEnabled="true"
+
+                app:hintTextColor="#555B6E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editEventProfile_ETXT_editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="30"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:outlineAmbientShadowColor="#555B6E"
+                    android:shadowColor="#555B6E"
+                    android:textColor="#555B6E" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:hint="Location"
+                    android:textColorHint="#555B6E"
+                    app:boxStrokeColor="#555B6E"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="5dp"
+                    app:hintTextColor="#555B6E">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editEventProfile_ETXT_editLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="30"
+                        android:imeOptions="actionDone"
+                        android:maxLength="15"
+                        android:outlineAmbientShadowColor="#555B6E"
+                        android:shadowColor="#555B6E"
+                        android:textColor="#555B6E" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:hint="Budget"
+                    android:textColorHint="#555B6E"
+                    app:boxStrokeColor="#555B6E"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:hintTextColor="#555B6E">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editEventProfile_ETXT_editBudget"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="30"
+                        android:imeOptions="actionDone"
+                        android:maxLength="15"
+                        android:outlineAmbientShadowColor="#555B6E"
+                        android:shadowColor="#555B6E"
+                        android:inputType="number"
+                        android:textColor="#555B6E" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editEventProfile_BTN_addPartner"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FEF6E4"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                android:text="add a partner"
+                android:textSize="12sp"
+                android:textColor="#001858"
+                />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_above="@+id/eventProfile_BTN_Editphoto"
+                android:gravity="center"
+                >
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editEventProfile_BTN_okEdit"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#8BD3DD"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                    android:text="OK"
+                    android:textColor="#001858"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editEventProfile_BTN_cancelEdit"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#FEF6E4"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                    android:text="cancel"
+                    android:textColor="#001858"
+                    android:layout_marginStart="30dp"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <RelativeLayout
+            android:id="@+id/editEventProfile_RLY_foucus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#63000000"
+            android:visibility="gone"
+            >
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/editEventProfile_LLY_addNewPartner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FEF6E4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/editEventProfile_TXT_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textColor="#FF0000"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:hint="+972"
+                    android:textColorHint="#555B6E"
+                    app:boxStrokeColor="#555B6E"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="#555B6E">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editEventProfile_ETXT_stateCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="30"
+                        android:inputType="none"
+                        android:outlineAmbientShadowColor="#555B6E"
+                        android:shadowColor="#555B6E"
+                        android:textColor="#555B6E"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="2"
+                    android:hint="Partner Phone Number"
+                    android:textColorHint="#555B6E"
+                    app:boxStrokeColor="#555B6E"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="9"
+                    app:errorEnabled="true"
+                    app:hintTextColor="#555B6E">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editEventProfile_ETXT_partnerPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="30"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="9"
+                        android:outlineAmbientShadowColor="#555B6E"
+                        android:shadowColor="#555B6E"
+                        android:textColor="#555B6E" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editEventProfile_BTN_addNewPartner"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#F582AE"
+                    android:text="add partner"
+                    android:textColor="#001858"
+                    android:textSize="12sp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editEventProfile_BTN_addNewCancel"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#00F87575"
+                    android:text="Cancel"
+                    android:textColor="#001858"
+                    android:textSize="12sp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</FrameLayout>

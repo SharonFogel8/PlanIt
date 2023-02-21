@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.TDLFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEF6E4"
+        android:scrollbars="vertical"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="To Do List"
+            android:textColor="#001858"
+            android:textSize="24dp"
+            android:fontFamily="@font/josefinsans_medium"
+            android:padding="15dp"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventProfile_LLY_profileHeadline"
+            android:orientation="vertical"
+            >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/tdl_BTN_myDay"
+                   app:icon="@drawable/icn_sun"
+                   app:iconTint="#001858"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="8"
+                   android:background="#00FFFFFF"
+                   android:text="My Day"
+                   android:textAllCaps="false"
+                   android:textColor="#001858"
+                   android:gravity="start"
+                   android:textSize="20sp"
+                   android:layout_marginTop="10dp"
+
+                   />
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="#00FFFFFF"
+                   android:text="5"
+                   android:textAllCaps="false"
+                   android:textColor="#737373"
+                   android:gravity="start"
+                   android:textSize="20sp"
+                   android:layout_marginTop="5dp"
+                   />
+
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tdl_BTN_important"
+                    app:icon="@drawable/icn_star"
+                    app:iconTint="#001858"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="#00FFFFFF"
+                    android:text="Important"
+                    android:textAllCaps="false"
+                    android:textColor="#001858"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:text="5"
+                    android:textAllCaps="false"
+                    android:textColor="#737373"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tdl_BTN_complited"
+                    app:icon="@drawable/icn_complited"
+                    app:iconTint="#001858"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:text="Complited"
+                    android:textAllCaps="false"
+                    android:textColor="#001858"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:text="5"
+                    android:textAllCaps="false"
+                    android:textColor="#737373"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tdl_BTN_all"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="#00FFFFFF"
+                    android:text="ALL"
+                    android:textAllCaps="false"
+                    android:textColor="#001858"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    app:icon="@drawable/icn_infinity"
+                    app:iconTint="#001858"
+                    android:layout_marginTop="5dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:text="5"
+                    android:textAllCaps="false"
+                    android:textColor="#737373"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

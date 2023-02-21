@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FEF6E4">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEF6E4"
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+
+        <CheckBox
+            android:id="@+id/tdl_list_CBX_complited"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tdl_list_TXT_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="6"
+            android:fontFamily="@font/josefinsans_bold"
+            android:text="Mingling "
+            android:maxLines="2"
+            android:textSize="14sp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/tdl_list_IMG_remove"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icn_trash_btn"
+            />
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

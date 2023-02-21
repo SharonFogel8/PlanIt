@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.BudgetFragment"
+    android:backgroundTint="#FEF6E4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/budget_LNR_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/budget_TXT_mybudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Budget:"
+                android:fontFamily="@font/josefinsans_medium"
+                android:textSize="22sp"
+                android:textColor="#001858"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/budget_TXT_leftover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/budget_TXT_mybudget"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:text="15,500 $"
+                android:textColor="#001858"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#F3DDAE"
+            android:orientation="vertical"
+            >
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Budget: "
+                android:textSize="18sp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:layout_marginEnd="5dp"
+                android:textColor="#001858"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/budget_TXT_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20,000"
+                android:textSize="18sp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:textColor="#001858"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="#FEF6E4"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/budget_RCV_items"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </ScrollView>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/budget_BTN_additem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="20dp"
+        android:text="+"
+        android:textColor="#001858"
+        android:textSize="20sp"
+        android:gravity="end"
+        android:backgroundTint="#F582AE"
+        />
+        <RelativeLayout
+            android:id="@+id/budget_RTL_foucus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8B8E8888"
+            android:visibility="invisible"
+            >
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/budget_LNR_newitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="#FEF6E4"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/josefinsans_medium"
+                android:text="New budget item"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/budget_ETXT_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter new Item" />
+
+            <EditText
+                android:id="@+id/budget_ETXT_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Type" />
+
+            <EditText
+                android:id="@+id/budget_ETXT_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Price"
+                android:inputType="number" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/budget_BTN_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="OK"
+                    android:textColor="#001858"
+                    app:cornerRadius="100dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/budget_BTN_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FEF6E4"
+                    android:text="cancel"
+                    android:textColor="#001858"
+                    app:cornerRadius="100dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</FrameLayout>

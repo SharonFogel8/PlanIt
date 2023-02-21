@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ public class HomeFragment extends Fragment implements Observable {
     private MaterialButton home_BTN_invited;
     private MaterialButton home_BTN_newEvent;
     private HomePageActivity homePageActivity;
+    private boolean firstTimeList= true;
     View view;
     public HomeFragment(){
     }
@@ -48,6 +50,28 @@ public class HomeFragment extends Fragment implements Observable {
                     fragment_callback.go_next(newEventFragment,newEventFragment);
                 }
 
+            }
+        });
+        home_BTN_myEvents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(fragment_callback!=null){
+//                    if(firstTimeList==false){
+//                        Log.d("myLog","false!");
+//                        FragmentManager fragmentManager = getChildFragmentManager();
+//                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//
+//// Get the fragment you want to remove
+//                        EventsListFragment myFragment = (EventsListFragment) fragmentManager.findFragmentById(R.id.fragmentEventList);
+//
+//// Remove the fragment
+//                        fragmentTransaction.remove(myFragment);
+//                        fragmentTransaction.commit();
+//                    }
+                    //firstTimeList=false;
+                    EventsListFragment eventsListFragment= new EventsListFragment();
+                    fragment_callback.go_next(eventsListFragment,eventsListFragment);
+                }
             }
         });
     }

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
@@ -22,6 +23,8 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText register_ETXT_name;
     private MaterialButton      register_BTN_create;
     private MaterialRadioButton register_BTN_supplier;
+    private TextView register_TXT_errorname;
+    private TextView register_TXT_errorphone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
         });
         register_BTN_create.setOnClickListener(view -> {
             MyUser user= new MyUser();
-            user.setName(register_ETXT_name.getText().toString()).setUID(FirebaseAuth.getInstance().getCurrentUser().getUid());
+            user.setName(register_ETXT_name.getText().toString()).setMy_uid(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                    .setPhoneNum(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber());
             MyDB.getInstance().createUser(user);
         });
     }
@@ -62,6 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
         @Override
         public void user_create(MyUser user) {
             DataManager.get_instance().setUser(user);
+            Log.d("myLog","create "+user.toString());
             go_next(HomePageActivity.class);
         }
 

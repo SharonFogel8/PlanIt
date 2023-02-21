@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.animation.Animator;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -18,7 +19,6 @@ import com.sharon.planitall.tools.MyDB;
 public class ActivityEnterApp extends AppCompatActivity {
     private LottieAnimationView enter_animation_view;
 
-    // TODO: 08/01/2023 change lottie to lottie app icon
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +73,7 @@ public class ActivityEnterApp extends AppCompatActivity {
 
         @Override
         public void user_found(MyUser myUser) {
+            Log.d("myLog","start"+myUser.toString());
             DataManager.get_instance().setUser(myUser);
             go_next(HomePageActivity.class);
         }

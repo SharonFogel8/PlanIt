@@ -65,20 +65,20 @@
            android:fontFamily="@font/josefinsans_medium"
            android:textSize="20sp"
            />
+
        <com.google.android.material.button.MaterialButton
            android:id="@+id/home_BTN_newEvent"
            android:layout_width="250dp"
            android:layout_height="60dp"
            android:layout_below="@id/home_BTN_invited"
            android:layout_centerInParent="true"
-           app:backgroundTint="#F582AE"
            android:layout_marginTop="30dp"
-           app:cornerRadius="39dp"
+           android:fontFamily="@font/josefinsans_medium"
            android:text="New event"
            android:textColor="#001858"
-           android:fontFamily="@font/josefinsans_medium"
            android:textSize="20sp"
-           />
+           app:backgroundTint="#F582AE"
+           app:cornerRadius="39dp" />
 
 
    </RelativeLayout>

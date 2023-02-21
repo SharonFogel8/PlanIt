@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregments.ScheduleFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEF6E4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/schedule_TXT_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event name"
+            android:fontFamily="@font/josefinsans_bold"
+            android:textSize="24sp"
+            android:layout_margin="15dp"
+            android:textColor="#001858"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/schedule_TXT_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22/12/2023"
+            android:fontFamily="@font/josefinsans_medium"
+            android:textSize="24sp"
+            android:layout_margin="10dp"
+            android:textColor="#001858"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/schedule_RCV_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/schedule_RTL_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#614A4747"
+        android:visibility="invisible"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/schedule_LNL_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="30dp"
+            android:background="#FEF6E4"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="new task"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/schedule_ETXT_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:hint="Add title"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/schedule_TXT_StartTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="Start Time"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/schedule_BTN_setTimeStart"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#8BD3DD"
+                    app:cornerRadius="100dp"
+                    app:icon="@drawable/icn_set_time_btn"
+                    app:iconSize="25dp"
+                    app:iconTint="#001858" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/schedule_TXT_endTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:hint="End Time"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/schedule_BTN_setTimeEnd"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#8BD3DD"
+                    app:cornerRadius="100dp"
+                    app:icon="@drawable/icn_set_time_btn"
+                    app:iconSize="25dp"
+                    app:iconTint="#001858" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/schedule_BTN_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="OK"
+                    android:textColor="#001858"
+                    app:cornerRadius="100dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/schedule_BTN_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FEF6E4"
+                    android:text="cancel"
+                    android:textColor="#001858"
+                    app:cornerRadius="100dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <RelativeLayout
+            android:id="@+id/schedule_RLT_timePickerStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FEF6E4"
+            android:layout_margin="20dp"
+            android:visibility="invisible"
+            >
+            <TimePicker
+                android:id="@+id/schedule_TPK_timepickerStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/schedule_TPK_timepickerStart"
+                >
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/schedule_TXT_startCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    android:textColor="#092267"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/schedule_TXT_startOK"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#092267"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/schedule_RLT_timePickerEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FEF6E4"
+            android:layout_margin="20dp"
+            android:visibility="invisible"
+            >
+            <TimePicker
+                android:id="@+id/schedule_TPK_timepickerEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/schedule_TPK_timepickerEnd"
+                >
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/schedule_TXT_endCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    android:textColor="#092267"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/schedule_TXT_endOK"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#092267"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/schedule_BTN_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="20dp"
+            android:text="+"
+            android:textColor="#001858"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:backgroundTint="#F582AE"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

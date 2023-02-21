@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 public class MyUser {
     private String name;
-    private String UID;
-    private ArrayList<Events> events= new ArrayList<>();
-    private ArrayList<Events> invitedEvents= new ArrayList<>();
+    private String my_uid;
+    private ArrayList<String> events= null;
+    private ArrayList<String> invitedEvents= new ArrayList<>();
     private String img;
     private ArrayList<TDL> myTasks=new ArrayList<>();
-
+    private ArrayList<TDL> importantTasks=new ArrayList<>();
+    private String phoneNum;
     public ArrayList<TDL> getMyTasks() {
         return myTasks;
     }
@@ -22,11 +23,17 @@ public class MyUser {
     public MyUser() {
 
     }
+    public void newTasksList(){
+        myTasks= new ArrayList<>();
+    }
 
     public String getName() {
         return name;
     }
-    public void addNewEvent(Events newEvent){
+    public void addNewEvent(String newEvent){
+        if(events==null){
+            events= new ArrayList<>();
+        }
         events.add(newEvent);
     }
 
@@ -35,29 +42,29 @@ public class MyUser {
         return this;
     }
 
-    public String getUID() {
-        return UID;
+    public String getMy_uid() {
+        return my_uid;
     }
 
-    public MyUser setUID(String UID) {
-        this.UID = UID;
+    public MyUser setMy_uid(String my_uid) {
+        this.my_uid = my_uid;
         return this;
     }
 
-    public ArrayList<Events> getEvents() {
+    public ArrayList<String> getEvents() {
         return events;
     }
 
-    public MyUser setEvents(ArrayList<Events> events) {
+    public MyUser setEvents(ArrayList<String> events) {
         this.events = events;
         return this;
     }
 
-    public ArrayList<Events> getInvitedEvents() {
+    public ArrayList<String> getInvitedEvents() {
         return invitedEvents;
     }
 
-    public MyUser setInvitedEvents(ArrayList<Events> invitedEvents) {
+    public MyUser setInvitedEvents(ArrayList<String> invitedEvents) {
         this.invitedEvents = invitedEvents;
         return this;
     }
@@ -69,5 +76,27 @@ public class MyUser {
     public MyUser setImg(String img) {
         this.img = img;
         return this;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public MyUser setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "MyUser{" +
+                "name='" + name + '\'' +
+                ", UID='" + my_uid + '\'' +
+                ", events=" + events +
+                ", invitedEvents=" + invitedEvents +
+                ", img='" + img + '\'' +
+                ", myTasks=" + myTasks +
+                ", phoneNum='" + phoneNum + '\'' +
+                '}';
     }
 }

@@ -1,36 +1,96 @@
 package com.sharon.planitall.Objects;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 
 public class Events {
     private String name;
-    private String UID;
+    private String my_uid;
     private HashMap<String,String> guestMap= new HashMap<>();
-    private ArrayList<TDL> myTasks=new ArrayList<>();
-    private Schedule Schedule;
-    private ArrayList<String> managers;
-    private String img;
+    private ArrayList<TDL> myTasks=null;
+    private ArrayList<Schedule> schedules=null;
+    private ArrayList<String> managers= new ArrayList<>();
+    private int img=0;
     private float budget;
     private float leftOverMoney;
-    private HashMap<String,Float> shopping= new HashMap<>();
+    private ArrayList<BudgetItem> shopping= new ArrayList<>();
+    private eEventType eEventType;
+    private int year;
+    private int month;
+    private int day;
+    private int numOfInvited;
+    private String location;
+
+    public String getLocation() {
+        return location;
+    }
+
+    public Events setLocation(String location) {
+        this.location = location;
+        return this;
+    }
+    public void newSchduleList(){
+        schedules= new ArrayList<>();
+    }
+    public void newTasksList(){
+        myTasks= new ArrayList<>();
+    }
+
+    public eEventType geteEventType() {
+        return eEventType;
+    }
+
+    public Events seteEventType(eEventType eEventType) {
+        this.eEventType = eEventType;
+        return this;
+    }
 
     public Events setLeftOverMoney(float leftOverMoney) {
         this.leftOverMoney = leftOverMoney;
         return this;
     }
-
-    public Events setShopping(HashMap<String, Float> shopping) {
-        this.shopping = shopping;
+    public Events setDate(int year,int month,int day){
+        this.day=day;
+        this.year=year;
+        this.month=month;
         return this;
     }
 
-    public String getUID() {
-        return UID;
+    public int getYear() {
+        return year;
     }
 
-    public Events setUID(String UID) {
-        this.UID = UID;
+    public Events setYear(int year) {
+        this.year = year;
+        return this;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public Events setMonth(int month) {
+        this.month = month;
+        return this;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public Events setDay(int day) {
+        this.day = day;
+        return this;
+    }
+
+
+    public String getMy_uid() {
+        return my_uid;
+    }
+
+    public Events setMy_uid(String my_uid) {
+        this.my_uid = my_uid;
         return this;
     }
 
@@ -42,9 +102,6 @@ public class Events {
         return leftOverMoney;
     }
 
-    public HashMap<String, Float> getShopping() {
-        return shopping;
-    }
 
     public String getName() {
         return name;
@@ -58,19 +115,13 @@ public class Events {
     public void addGuest(String phoneNum, String name){
         guestMap.put(phoneNum,name);
     }
-    public void addShop(String name,float price){
-        shopping.put(name,price);
-        leftOverMoney-=price;
-    }
-    public void deleteShop(String name,float price){
-        leftOverMoney+=price;
-        shopping.remove(name,price);
-    }
 
-    public void setImg(String img){
+
+
+    public void setImg(int img){
         this.img=img;
     }
-    public String getImg(){
+    public int getImg(){
         return img;
     }
     public void deleteGuest(String phoneNum){
@@ -100,14 +151,8 @@ public class Events {
         return this;
     }
 
-    public Schedule getSchedule() {
-        return Schedule;
-    }
 
-    public Events setSchedule(Schedule schedule) {
-        Schedule = schedule;
-        return this;
-    }
+
 
     public ArrayList<String> getManagers() {
         return managers;
@@ -127,4 +172,65 @@ public class Events {
         return this;
     }
 
+    public int getNumOfInvited() {
+        return numOfInvited;
+    }
+
+    public Events setNumOfInvited(int numOfInvited) {
+        this.numOfInvited = numOfInvited;
+        return this;
+    }
+
+    public ArrayList<BudgetItem> getShopping() {
+        return shopping;
+    }
+
+    public Events setShopping(ArrayList<BudgetItem> shopping) {
+        this.shopping = shopping;
+        return this;
+    }
+    public Events addShop(BudgetItem budgetItem){
+        leftOverMoney-=budgetItem.getCost();
+        shopping.add(budgetItem);
+        return this;
+    }
+    public Events removeShop(BudgetItem budgetItem){
+        leftOverMoney+=budgetItem.getCost();
+        shopping.remove(budgetItem);
+        return this;
+    }
+    public Events updateBudget(){
+        leftOverMoney= budget;
+        for (int i = 0; i < shopping.size(); i++) {
+            leftOverMoney-=shopping.get(i).getCost();
+        }
+        return this;
+    }
+
+    public ArrayList<Schedule> getSchedules() {
+        return schedules;
+    }
+
+    public Events setSchedules(ArrayList<Schedule> schedules) {
+        this.schedules = schedules;
+        return this;
+    }
+    public Events addSchedule(Schedule schedule) {
+        schedules.add(schedule);
+        sortSchedule();
+        return this;
+    }
+    public void sortSchedule(){
+        schedules.sort(compare_schedule);
+    }
+    public Events deleteSchedule(Schedule schedule) {
+        schedules.remove(schedule);
+        return this;
+    }
+    private Comparator<Schedule> compare_schedule = new Comparator<Schedule>() {
+        @Override
+        public int compare(Schedule schedule, Schedule t1) {
+            return schedule.getStartHour().compareTo(t1.getStartHour());
+        }
+    };
 }

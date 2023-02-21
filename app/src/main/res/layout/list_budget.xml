@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#FEF6E4"
+
+    >
+
+    <TwoLineListItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="15dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/budget_TXT_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefinsans_bold"
+                    android:text="Type"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/budget_TXT_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefinsans_medium"
+                    android:text="name"
+                    android:textSize="16sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/budget_TXT_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/josefinsans_bold"
+                android:text="1,000$"
+                android:textSize="18sp" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/budget_IMG_remove"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/icn_trash_btn"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </TwoLineListItem>
+
+
+</com.google.android.material.card.MaterialCardView >
