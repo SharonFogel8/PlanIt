@@ -35,15 +35,15 @@ PlanIt makes event planning stress-free and fun!
 - lottie animation
 - fire base authentication & UI
 
-|Authentication by phone number|
-|---|
-|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/login.gif?raw=true" alt="animated"  height="480" width="216"/>|
+|Authentication by phone number|Home Page|
+|---|---|
+|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/login.gif?raw=true" alt="animated"  height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/home-page.jpeg?raw=true" alt="animated" height="480" width="216"/>
 
 
-|Home Page|My Events|Event Profile|
+|My Events|Event Profile|Budget Managment
 |---|---|---|
-|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/home-page.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/my-events.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/event-profile2.jpeg?raw=true" alt="animated" height="480" width="216"/>
+|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/my-events.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/event-profile2.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/WhatsApp%20Image%202023-05-04%20at%2013.39.43.jpeg?raw=true" alt="animated" height="480" width="216"/>
 
-|Budget Managment|Event Schedule|Guest List|To Do List|
-|---|---|---|---|
-|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/WhatsApp%20Image%202023-05-04%20at%2013.39.43.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/schedule.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/guest-list.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/app/src/main/res/drawable/tdl.jpeg?raw=true" alt="animated" height="480" width="216"/>
+|Event Schedule|Guest List|To Do List|
+|---|---|---|
+|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/schedule.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/guest-list.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/app/src/main/res/drawable/tdl.jpeg?raw=true" alt="animated" height="480" width="216"/>
