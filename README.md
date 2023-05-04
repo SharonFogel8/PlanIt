@@ -37,12 +37,12 @@ PlanIt makes event planning stress-free and fun!
 
 |Authentication by phone number|
 |---|
-|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/login.gif?raw=true"/> height="10" width="45""|
+|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/login.gif?raw=true" alt="animated"/>|
 
 
 |Home page|Google maps|Search Engine|
 |---|---|---|
-|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/home-page.jpeg?raw=true" alt="animated"/>|<img src="https://media.giphy.com/media/k5mfcFpYSpWRowsUpa/giphy.gif" alt="animated"/>|<img src="https://media.giphy.com/media/hcfXtHdeXM7fYXM8n6/giphy.gif" alt="animated"/>
+|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/home-page.jpeg?raw=true" alt="animated" alt="animated"/>|<img src="https://media.giphy.com/media/k5mfcFpYSpWRowsUpa/giphy.gif" alt="animated"/>|<img src="https://media.giphy.com/media/hcfXtHdeXM7fYXM8n6/giphy.gif" alt="animated"/>
 
 |Make Review|Search page|Profile page|Reservation|
 |---|---|---|---|
