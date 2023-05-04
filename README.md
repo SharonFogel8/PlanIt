@@ -37,7 +37,7 @@ PlanIt makes event planning stress-free and fun!
 
 |Authentication by phone number|
 |---|
-|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/login.gif?raw=true"/> alt="animated"|
+|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/login.gif?raw=true"/> height="10" width="45""|
 
 
 |Home page|Google maps|Search Engine|
