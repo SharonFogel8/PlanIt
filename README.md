@@ -7,7 +7,7 @@
 
 ## :information_source: About 
 PlanIt is the ultimate event planning tool!
-Our app lets you effortlessly create and manage private events with all the details you need, from guest lists and budgets to locations and suppliers.
+This app lets you effortlessly create and manage private events with all the details you need, from guest lists and budgets to locations and suppliers.
 Plus, with features like a collaborative partner manager and a customizable to-do list, you can stay on top of everything with ease.
 PlanIt makes event planning stress-free and fun!
 <br/>
@@ -44,6 +44,6 @@ PlanIt makes event planning stress-free and fun!
 |---|---|---|
 |<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/home-page.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/my-events.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/event-profile2.jpeg?raw=true" alt="animated" height="480" width="216"/>
 
-|Budget Managment|Event Schedule|To Do List|
+|Budget Managment|Event Schedule|Guest List|To Do List|
 |---|---|---|---|
 |<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/WhatsApp%20Image%202023-05-04%20at%2013.39.43.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/schedule.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/993246631ee4703c8bac909932af6307817c6636/guest-list.jpeg?raw=true" alt="animated" height="480" width="216"/>|<img src="https://github.com/SharonFogel8/PlanItAll/blob/master/app/src/main/res/drawable/tdl.jpeg?raw=true" alt="animated" height="480" width="216"/>
